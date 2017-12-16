@@ -1,0 +1,137 @@
+#ind-home {
+    min-height: 100vh;
+    /*background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);*/
+    background: #fdfbfb; /* Old browsers */
+    background: -moz-linear-gradient(left top, #fdfbfb 0%, #ebedee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left top, #fdfbfb 0%,#ebedee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right bottom, #fdfbfb 0%,#ebedee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfbfb', endColorstr='#ebedee',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*
+    #ind-intro styles
+*/
+#ind-intro {
+    margin-top: -5vh;
+}
+#ind-intro > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+}
+
+#ind-intro .ind-block {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    min-height: 300px;
+    vertical-align: middle;
+    padding: 40px;
+    background: #fff;
+    -webkit-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+    -moz-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+    -ms-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+    -o-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+    box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+    z-index: 7;
+    flex-grow: 1;
+    background-size: cover;
+    position: relative;
+    backgroun-repeat: no-repeat;
+}
+#ind-intro .ind-block p.fix-height {
+    height: 80px;
+}
+@media screen and (max-width: 768px) {
+    #ind-intro .ind-block {
+        width: 100%;
+    }
+}
+
+#ind-intro .ind-block > .overlay-darker {
+    z-index: 8;
+    opacity: .5;
+    background: #474747;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#ind-intro .ind-block > .overlay {
+    background: #fff;
+    opacity: 1;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#ind-intro .ind-block > .ind-text {
+    position: relative;
+    z-index: 10;
+}
+
+#ind-intro .ind-block > .ind-text .ind-intro-icon {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 30px;
+    display: block;
+}
+#ind-intro .ind-block > .ind-text .ind-intro-number {
+    display: block;
+    font-size: 50px;
+    color: #007bff;
+}
+#ind-intro .ind-block h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#ind-intro .ind-block:hover > .overlay,
+#ind-intro .ind-block:focus > .overlay {
+    opacity: 0;
+    z-index: 9;
+}
+
+#ind-intro .ind-block:hover > .ind-text,
+#ind-intro .ind-block:focus > .ind-text {
+    color: #fff;
+}
+
+#ind-intro .ind-block:hover > .ind-text .ind-intro-icon,
+#ind-intro .ind-block:focus > .ind-text .ind-intro-icon,
+#ind-intro .ind-block:hover > .ind-text .ind-intro-number,
+#ind-intro .ind-block:focus > .ind-text .ind-intro-number {
+    color: #fff;
+}
+
+#ind-intro .ind-block:hover h2,
+#ind-intro .ind-block:focus h2 {
+    color: #fff;
+}
+
+#ind-intro .ind-block:hover .btn,
+#ind-intro .ind-block:focus .btn {
+    border: 2px solid #fff !important;
+    background: transparent;
+}
+
+#ind-intro .ind-block:hover .btn:hover,
+#ind-intro .ind-block:focus .btn:hover {
+    background: #007bff !important;
+    border: 2px solid #007bff !important;
+}
